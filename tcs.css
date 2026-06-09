@@ -1,0 +1,251 @@
+/* =========================================
+   1. GLOBAL & RESET
+========================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================================
+   2. NAVIGATION BAR
+========================================= */
+.fixed_nav {
+    background-color: #000;
+    height: 85px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.fixed_nav img {
+    height: 65px;
+    width: auto;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.links a {
+    color: #999FA3;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #fff;
+}
+
+.fixed_nav .search img {
+    height: 25px;
+    width: auto;
+    cursor: pointer;
+}
+
+/* =========================================
+   3. HERO VIDEO SECTION
+========================================= */
+.fixed-video {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Pushes video to background */
+}
+
+.fixed-video video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    align-items: flex-end;
+  
+}
+
+.box {
+    position: absolute;
+    bottom: 0.1%;
+    left: 10%;
+    background-color: #005B9C;
+    height: 50px;
+    width: 180px;
+    border-radius: 25px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;  
+    z-index: 10;
+}
+
+.box:hover {
+    background-color: #0073c6;
+}
+
+/* =========================================
+   4. ABOUT / NEWS SECTION (White Background)
+========================================= */
+.about {
+    width: 100%;
+    background-color: #fff;
+    padding: 80px 60px;
+}
+
+.about h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+.news-container {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.news-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Zoom Effect for News Cards */
+.img-wrapper {
+    width: 100%;
+    height: 250px;
+    overflow: hidden; /* Hides zoomed parts */
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.news-card:hover .img-wrapper img {
+    transform: scale(1.1); /* Zooms in 10% */
+}
+
+.news-txt {
+    margin-top: 20px;
+}
+
+.news-txt h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 35px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.news-txt p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* =========================================
+   5. BOX 2 / SOLUTIONS SECTION (Black Background)
+========================================= */
+.box2 {
+    width: 100%;
+    background-color: #000;
+    padding: 80px 60px;
+}
+
+.box2 h2 {
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.card {
+    background-color: #383a3f;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Important for zoom */
+    cursor: pointer;
+}
+
+/* Zoom Effect for Dark Cards */
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease-in-out; /* Smooth transition */
+}
+
+.card:hover img {
+    transform: scale(1.1); /* Zooms in 10% */
+}
+
+.card-contant { /* Matched with your HTML spelling */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-title {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    color: #d1d1d1;
+    font-size: 1.2rem;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+/* =========================================
+   6. BOX 3 (Footer Space)
+========================================= */
+.box3 {
+    width: 100%;
+    background-color: #fff;
+    height: 100px;
+}
