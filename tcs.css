@@ -163,6 +163,14 @@ html, body {
     display: flex;
     gap: 30px;
     width: 100%;
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.news-container::-webkit-scrollbar{
+    display: none;
 }
 
 .news-card {
@@ -297,7 +305,13 @@ html, body {
     display: flex;
     gap: 20px;
     position: relative;
-    overflow: hidden;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.story-container::-webkit-scrollbar{
+    display: none;
 }
 
 .box3 .story-card{
@@ -308,8 +322,6 @@ html, body {
     height: 450px;      
     border-radius: 12px;
     flex-shrink: 0;
-
-    
 }
 
 .story-contant{
