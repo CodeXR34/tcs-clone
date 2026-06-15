@@ -227,13 +227,13 @@ html, body {
     margin-bottom: 50px;
 }
 
-.card-container {
+.box2 .card-container {
     display: flex;
     gap: 20px;
     width: 100%;
 }
 
-.card {
+.box2 .card {
     background-color: #383a3f;
     flex: 1;
     display: flex;
@@ -243,7 +243,7 @@ html, body {
 }
 
 /* Zoom Effect for Dark Cards */
-.card img {
+.box2 .card img {
     width: 100%;
     height: 220px;
     object-fit: cover;
@@ -251,25 +251,25 @@ html, body {
     transition: transform 0.5s ease-in-out; /* Smooth transition */
 }
 
-.card:hover img {
+.box2 .card:hover img {
     transform: scale(1.1); /* Zooms in 10% */
 }
 
-.card-contant { /* Matched with your HTML spelling */
+.box2 .card-contant { 
     padding: 30px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-.card-title {
+.box2 .card-title {
     color: #fff;
     font-size: 2.2rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
-.card-text {
+.box2 .card-text {
     color: #d1d1d1;
     font-size: 1.2rem;
     font-weight: 100;
@@ -282,5 +282,80 @@ html, body {
 .box3 {
     width: 100%;
     background-color: #fff;
-    height: 100px;
+    padding: 5rem 3.8rem;
+}
+
+.box3 h2{
+    overflow: hidden;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.box3 .story-container{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.box3 .story-card{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 350px;       
+    height: 450px;      
+    border-radius: 12px;
+    flex-shrink: 0;
+
+    
+}
+
+.story-contant{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 1rem;
+}
+
+.box3 .story-card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease-in-out;
+}
+
+.box3 .story-card:hover img{
+    transform: scale(1.1);
+}
+
+.story-contant h3 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.story-contant p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.story-container a{
+    font-size: 1rem;
+    font-weight: 500;
+    font-style: bold;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+    text-decoration: none;
 }
