@@ -149,6 +149,7 @@ html, body {
     width: 100%;
     background-color: #fff;
     padding: 80px 60px;
+   
 }
 
 .about h1 {
@@ -174,10 +175,12 @@ html, body {
 }
 
 .news-card {
-    flex: 1;
     display: flex;
+    flex: 1 ;
     flex-direction: column;
     cursor: pointer;
+    min-width: 350px;
+    flex-shrink: 0;
 }
 
 /* Zoom Effect for News Cards */
